@@ -16,9 +16,12 @@ const Header = () => {
            <ul className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[o.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-6'>
             {
                 links.map((link) => 
-                    <li key={link.hash} className='h-3/4 flex items-center justify-center relative'>
+                    <motion.li key={link.hash} className='h-3/4 flex items-center justify-center relative'
+                    initial={{y:-100, opacity:0}}
+                    animate={{y:0, opacity:1}}
+                    >
                         <Link href={link.hash} className='flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300'>{link.name}</Link>
-                    </li>
+                    </motion.li>
                 )
             }
            </ul>
