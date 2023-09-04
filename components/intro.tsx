@@ -69,8 +69,8 @@ const Intro = () => {
          <BsCloudDownload className="group-hover:translate-y-1 transition"/>
         </a>
         <div className="flex gap-3">
-        <a className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all" href="https://www.linkedin.com/in/humayun94/"><BiLogoLinkedin /></a>
-        <a className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all" href="https://github.com/devhumayun"><AiOutlineGithub /></a>
+        <a target="_blank" className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all" href="https://www.linkedin.com/in/humayun94/"><BiLogoLinkedin /></a>
+        <a target="_black" className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all" href="https://github.com/devhumayun"><AiOutlineGithub /></a>
         </div>
       </motion.div>
     </section>
