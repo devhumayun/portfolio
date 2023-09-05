@@ -2,16 +2,20 @@
 import Image from "next/image";
 import author from "@/public/author.JPG";
 import { motion } from 'framer-motion'
-import React from "react";
+import { useInView } from 'react-intersection-observer'
+import React, { useContext, useEffect } from "react";
 import { BsChevronRight, BsCloudDownload } from 'react-icons/bs';
 import { BiLogoLinkedin } from 'react-icons/bi';
 import { AiOutlineGithub } from 'react-icons/ai';
 import Link from "next/link";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/libs/hooks";
 
 const Intro = () => {
+  const {ref} = useSectionInView("Home")
   return (
-    <section className="max-w-[45rem] text-center mb-24 sm:mb-0">
-      <div className="flex justify-center items-center ">
+    <section ref={ref} id="home" className="max-w-[45rem] text-center mb-24 sm:mb-0 scroll-mt-[90rem]">
+      <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
             initial={{opacity: 0, scale:0}}

@@ -2,10 +2,12 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import SectionHeading from './section-heading'
+import { useSectionInView } from '@/libs/hooks'
 
 const About = () => {
+  const {ref} = useSectionInView("About", 0.80)
   return (
-    <motion.section className='max-w-[45rem] text-center'
+    <motion.section ref={ref} id='about' className='max-w-[45rem] text-center scroll-mt-[10rem]'
         initial={{ opacity: 0 , y: 100}}
         animate={{ opacity: 1, y: 0}}
         transition={{
