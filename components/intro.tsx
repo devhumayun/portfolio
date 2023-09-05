@@ -13,6 +13,7 @@ import { useSectionInView } from "@/libs/hooks";
 
 const Intro = () => {
   const {ref} = useSectionInView("Home")
+  const { setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
   return (
     <section ref={ref} id="home" className="max-w-[45rem] text-center scroll-mt-[10rem] mb-24">
       <div className="flex justify-center items-center">
@@ -66,7 +67,10 @@ const Intro = () => {
           delay: .1
         }}
       >
-        <Link className="group bg-black flex text-white justify-center items-center px-4 py-2 rounded-full gap-2 hover:scale-105 hover:bg-white hover:text-black transition-all" href="#contact">  Contact me 
+        <Link onClick={() => {
+          setActiveSection("Contact")
+          setTimeOfLastClick(Date.now())
+        }} className="group bg-black flex text-white justify-center items-center px-4 py-2 rounded-full gap-2 hover:scale-105 hover:bg-white hover:text-black transition-all" href="#contact">  Contact me 
           <BsChevronRight className="opacity-.5 group-hover:translate-x-1 transition" />
         </Link>
         <a className="group bg-white flex text-black justify-center items-center px-4 py-2 rounded-full gap-2 hover:bg-black hover:text-white hover:scale-105 transition-all" href="/CV.pdf" download={true}>  Download CV 

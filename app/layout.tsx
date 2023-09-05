@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-36 sm:pt-[10rem] h-[500rem]`}>
+      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-36 sm:pt-[10rem]`}>
 
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#d1b6b7]"></div>
 
