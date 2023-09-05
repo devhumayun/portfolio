@@ -14,7 +14,7 @@ import { useSectionInView } from "@/libs/hooks";
 const Intro = () => {
   const {ref} = useSectionInView("Home")
   return (
-    <section ref={ref} id="home" className="max-w-[45rem] text-center mb-24 sm:mb-0 scroll-mt-[90rem]">
+    <section ref={ref} id="home" className="max-w-[45rem] text-center scroll-mt-[10rem] mb-24">
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
