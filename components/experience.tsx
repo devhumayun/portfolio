@@ -25,7 +25,7 @@ const Experience = () => {
                 borderRight: ".3rem solid #CEC9E2",
               }}
               icon={item.icon}
-              iconStyle={{ background: "white", fontSize:"1.5rem" }}
+              iconStyle={{ background: "white" ,fontSize:"1.5rem" }}
             >
               <h3 className='font-semibold'>{item.title}</h3>
               {/* <p>{item.location}</p> */}

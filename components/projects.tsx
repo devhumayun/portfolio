@@ -24,10 +24,10 @@ const Projects = () => {
       <SectionHeading> My Projects </SectionHeading>
       {projectsData.map((data, index) => (
         <>
-          <div className="group bg-gray-100 max-w-[43rem] flex mb-7 last:mb-0 overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition shadow border">
+          <div className="group bg-gray-100 max-w-[43rem] flex mb-7 last:mb-0 overflow-hidden relative sm:h-[20rem] rounded-sm hover:bg-gray-200 transition shadow border dark:bg-white/80 dark:rounded-sm" >
             <div className="pt-10 pl-5 pb-6 flex flex-col h-full sm:max-w-[50%] sm:group-even:ml-[20rem]">
-              <h3 className="font-semibold mb-2 text-left">{data.title}</h3>
-              <span className="text-left">{data.description}</span>
+              <h3 className="font-semibold mb-2 text-left dark:text-black dark:font-bold">{data.title}</h3>
+              <span className="text-left dark:text-black/70">{data.description}</span>
               <ul className="flex gap-2 flex-wrap sm:mt-auto">
                 {data.tags.map((tag, index) => (
                   <li
