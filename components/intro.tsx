@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import author from "@/public/author.JPG";
+import author from "@/public/author.jpg";
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import React, { useContext, useEffect } from "react";
