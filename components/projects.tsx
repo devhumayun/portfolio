@@ -24,14 +24,14 @@ const Projects = () => {
       <SectionHeading> My Projects </SectionHeading>
       {projectsData.map((data, index) => (
         <>
-          <div className="group bg-gray-100 max-w-[43rem] flex mb-7 last:mb-0 overflow-hidden relative sm:h-[20rem] rounded-sm hover:bg-gray-200 transition shadow border dark:bg-white/80 dark:rounded-sm" >
+          <div className="group bg-gray-100 max-w-[43rem] flex mb-7 last:mb-0 overflow-hidden relative sm:h-[20rem] rounded-sm hover:bg-gray-200 transition shadow border dark:bg-white/10 dark:rounded-sm dark:border-opacity-5 dark:border-black/5" >
             <div className="pt-10 pl-5 pb-6 flex flex-col h-full sm:max-w-[50%] sm:group-even:ml-[20rem]">
-              <h3 className="font-semibold mb-2 text-left dark:text-black dark:font-bold">{data.title}</h3>
-              <span className="text-left dark:text-black/70">{data.description}</span>
+              <h3 className="font-semibold mb-2 text-left dark:text-white dark:font-bold">{data.title}</h3>
+              <span className="text-left dark:text-white/70">{data.description}</span>
               <ul className="flex gap-2 flex-wrap sm:mt-auto">
                 {data.tags.map((tag, index) => (
                   <li
-                    className="bg-black/[.8] text-white py-2 px-2 rounded text-[1rem] hover:bg-white hover:text-black transition cursor-pointer"
+                    className="bg-black/[.8] text-white py-2 px-2 rounded text-[1rem] hover:bg-white hover:text-black transition cursor-pointer dark:bg-white/10 dark:hover:bg-white/80"
                     key={index}
                   >
                     {tag}

@@ -70,15 +70,15 @@ const Intro = () => {
         <Link onClick={() => {
           setActiveSection("Contact")
           setTimeOfLastClick(Date.now())
-        }} className="group bg-black flex text-white justify-center items-center px-4 py-2 rounded-full gap-2 hover:scale-105 hover:bg-white hover:text-black transition-all" href="#contact">  Contact me 
+        }} className="group bg-black flex text-white justify-center items-center px-4 py-2 rounded-full gap-2 hover:scale-105 hover:bg-white hover:text-black transition-all dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/80 dark:hover:text-black/80" href="#contact">  Contact me 
           <BsChevronRight className="opacity-.5 group-hover:translate-x-1 transition" />
         </Link>
-        <a className="group bg-white flex text-black justify-center items-center px-4 py-2 rounded-full gap-2 hover:bg-black hover:text-white hover:scale-105 transition-all" href="/CV.pdf" download={true}>  Download CV 
+        <a className="group bg-white flex text-black justify-center items-center px-4 py-2 rounded-full gap-2 hover:bg-black hover:text-white hover:scale-105 transition-all dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/80 dark:hover:text-black/80" href="/CV.pdf" download={true}>  Download CV 
          <BsCloudDownload className="group-hover:translate-y-1 transition"/>
         </a>
         <div className="flex gap-3">
-        <a target="_blank" className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all" href="https://www.linkedin.com/in/humayun94/"><BiLogoLinkedin /></a>
-        <a target="_black" className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all" href="https://github.com/devhumayun"><AiOutlineGithub /></a>
+        <a target="_blank" className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/80 dark:hover:text-black/80" href="https://www.linkedin.com/in/humayun94/"><BiLogoLinkedin /></a>
+        <a target="_black" className="bg-white flex text-black text-xl justify-center items-center p-3 rounded-full gap-2 hover:scale-105 hover:bg-black hover:text-white transition-all dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/80 dark:hover:text-black/80" href="https://github.com/devhumayun"><AiOutlineGithub /></a>
         </div>
       </motion.div>
     </section>
