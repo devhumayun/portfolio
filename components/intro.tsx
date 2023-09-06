@@ -52,12 +52,10 @@ const Intro = () => {
         initial={{opacity: 0, y:100}}
         animate={{opacity: 1, y: 0}}
       >
-        <span className="font-bold">Hello, I'm Humayun.</span> I'm a
-        <span className="font-bold">full-stack developer</span> with
+        <span className="font-bold">Hello, I'm Humayun.</span> I'm
+        <span className="font-bold"> Frontent Developer </span> with
         <span className="font-bold"> 2 years</span> of experience. I enjoy
-         building <span className="italic">sites</span>. My focus is
-         <span className="underline">React ,(Next.js)</span>
-         & Redux
+         building <span className="italic">sites</span>. My focus is <span className="bg-yellow-200 dark:bg-transparent">React Next & Redux</span>
       </motion.p>
 
       <motion.div className="flex flex-col sm:flex-row justify-center items-center gap-3"
