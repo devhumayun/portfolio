@@ -25,8 +25,10 @@ const Contact = () => {
         <SectionHeading> Contact me </SectionHeading>
         <p className='-mt-8 mb-10'> Please click here: <a className='underline' href="mailto: humayunkabir9408@gmail.com">info@gmail.com</a> for quick response. </p>
         <form action="">
-            <input className='group h-12 px-3 w-full mb-4 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-950' type="text" placeholder='Type your email'/>
-            <textarea placeholder='Type your message' className='px-3 py-2 w-full mb-4 border border-gray-200 rounded-lg h-32 focus:outline-none focus:border-gray-950' />
+            <input className='group h-12 px-3 w-full mb-4  rounded-lg focus:outline-none focus:border-gray-950 shadow-sm dark:bg-white/50' type="text" placeholder='Type your email'/>
+
+            <textarea placeholder='Type your message' className='px-3 py-2 w-full mb-4 rounded-lg h-32 focus:outline-none focus:border-gray-950 dark:bg-white/50' />
+
             <button className='group flex justify-center items-center gap-2 bg-black text-white px-4 py-3 rounded-lg hover:scale-105 hover:bg-gray-950 transition dark:bg-white/10' type='submit'> Submit 
               <BiSolidPaperPlane className="group-hover: translate-x-1 group-hover:-translate-y-1 transition" />
             </button>
